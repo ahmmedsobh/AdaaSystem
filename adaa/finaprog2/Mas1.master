@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Mas1.master.cs" Inherits="Mas1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%; background-color:azure">
+            <tr>
+                <td style="background-color:#1766f6; color:white;text-align:center; font-size:120px; margin:30px; padding:30px; font-family:Arial" class="auto-style1">&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="~/images/adaa.png" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:40px; background-color:#1766f6; color:white; text-align:center; padding:5px; margin:5px;" >All copy rights &copy; is saved to ProCode &trade;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

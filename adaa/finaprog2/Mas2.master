@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Mas1.master" AutoEventWireup="true" CodeFile="Mas2.master.cs" Inherits="Mas2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+
+        .auto-style3 {
+        }
+
+        ul{
+            list-style-type:none;
+            margin:0px;
+            padding:0px;
+            width:100%;
+            background-color:#0f161c;
+
+        }
+
+        ul li {
+
+            width:120px;
+            float:left;
+            background-color:#0f161c;
+            text-align:center;
+        }
+
+        .m {
+            display:block;
+            color:white;
+            padding: 8px 0px 8px 16px;
+
+        }
+
+        .m:hover{
+            background-color:white;
+            color:#0f161c;
+
+        }
+        </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table style="width:100%;">
+        <tr  >
+            <td class="auto-style3" style="background-color:#0f161c; border-width:0px; margin:0px; padding:0px">
+                
+                <ul>
+                    <li class="m">
+                        <asp:Label ID="Label1" runat="server" Text="Home"></asp:Label></li>
+                    <li class="m">
+                             <asp:Label ID="Label2" runat="server" Text="personal info"></asp:Label>
+                    </li>
+
+                    <li class="m">
+                             <asp:Label ID="Label3" runat="server" Text="About me"></asp:Label>
+                    </li>
+                    <li class="m">
+                             <asp:Label ID="Label4" runat="server" Text="Projects"></asp:Label>
+                    </li>
+               
+                     </ul>
+
+            </td>
+     
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+
